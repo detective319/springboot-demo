@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" xmlns:wicket="http://wicket.apache.org">
+<head><meta charset="UTF-8"><title>商品管理</title></head>
+<body>
+<h1>商品管理</h1>
+<div wicket:id="feedback"></div>
+<form wicket:id="form">
+    <label>名稱 <input wicket:id="name" type="text"></label>
+    <label>價格 <input wicket:id="price" type="text" inputmode="decimal"></label>
+    <button type="submit">新增商品</button>
+</form>
+<table>
+    <thead><tr><th>ID</th><th>名稱</th><th>價格</th></tr></thead>
+    <tbody><tr wicket:id="products"><td wicket:id="id"></td><td wicket:id="name"></td><td wicket:id="price"></td></tr></tbody>
+</table>
+<p><a href="/api/products">查看 JSON API</a></p>
+</body>
+</html>
